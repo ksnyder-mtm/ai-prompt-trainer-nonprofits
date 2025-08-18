@@ -2,55 +2,71 @@
 
 An interactive web app that teaches nonprofit professionals how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
 
+**🌐 Live Demo:** [Coming soon - deploy to Netlify]  
+**📁 Repository:** https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits
+
 ## 🎯 Overview
 
 This trainer helps nonprofit staff understand when and how to use different levels of AI tools effectively, from simple prompts to complex automations, without getting overwhelmed by technical complexity or spending beyond their limited technology budgets.
 
 ### Target Users
-- Nonprofit executives using basic templates
-- Development managers experimenting with ChatGPT  
-- Volunteer coordinators looking for efficiency
-- Education specialists helping others with tech
+- Nonprofit executives exploring AI adoption
+- Development managers transitioning from basic ChatGPT use
+- Volunteer coordinators seeking efficiency gains
+- Education specialists teaching others about AI tools
 
 ## 🏗️ Architecture
 
-- **Frontend**: React with TypeScript
+- **Frontend**: React 19.1+ with TypeScript
 - **Styling**: Custom CSS implementing MTM Style Guide
-- **Data**: Static JSON files (no backend required)
-- **Hosting**: Static site deployment (Netlify, Vercel, etc.)
+- **Data**: Static TypeScript files (no backend required)
+- **Deployment**: Static site on Netlify
+- **Navigation**: React Router for smooth transitions
 
-## 📚 The 4 Levels
+## 📚 The 3 Approaches (Updated)
+
+**Note**: Originally designed with 4 levels, now focuses on 3 practical approaches as Level 4 (Automated Workflows) is beyond current class scope.
 
 1. **Basic Prompt**: Simple, conversational requests
-2. **Structured Format (CRAFT)**: Context, Role, Action, Format, Tone
+2. **Structured Format**: Choose between CRAFT or PCTF frameworks
 3. **Packaged Tools**: Pre-configured AI assistants (GPTs, Projects, Gems)
-4. **Automated Workflows**: AI that runs automatically based on triggers
+
+### Framework Options for Structured Prompts
+
+**CRAFT**: Context, Role, Action, Format, Tone  
+**PCTF**: Persona, Context, Task, Format
+
+Interactive framework comparison helps learners understand which structure works best for their needs.
 
 ## 🎪 KCC Scenarios
 
-### 1. Board Meeting Tasks (📋)
+### 1. Meeting Notes to To-Do's (📋) ✅
+Transform meeting transcripts into actionable task assignments for all participants with clear deadlines and accountability.
+
+### 2. Board Meeting Tasks (📋) ✅  
 Process monthly board meeting notes about expanding foster network to serve 100 more kittens annually.
 
-### 2. Donor Thank You (💝)
-Create personalized thank you messages for Kitten 5K fundraiser donors.
+### 3. Donor Thank You (💝) ✅
+Create personalized thank you messages for Kitten 5K fundraiser donors with specific impact stories.
 
-### 3. Volunteer Recruitment (🤝)
+### 4. Volunteer Recruitment (🤝) ⏳
 Recruit and onboard volunteers for peak kitten season when KCC needs 150+ seasonal volunteers.
 
-### 4. Workshop Planning (📚)
+### 5. Workshop Planning (📚) ⏳
 Plan monthly community education workshop on responsible pet ownership and kitten care.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 16+ and npm
+- Node.js 18+ and npm
+- Git for version control
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone [repository-url]
-cd ai-prompt-trainer
+git clone https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits.git
+cd ai-prompt-trainer-nonprofits
 
 # Install dependencies
 npm install
@@ -78,7 +94,7 @@ The application follows the MTM Style Guide:
 
 ### Colors
 - Primary: `#1ab1d2` (light blue)
-- Accent: `#f18f38` (orange)
+- Accent: `#f18f38` (orange) 
 - Navy: `#1c487b` (dark blue)
 - Soft Blue: `#85abbd` (muted blue)
 - Background Cream: `#fef4e3`
@@ -94,57 +110,107 @@ The application follows the MTM Style Guide:
 ```
 src/
 ├── components/
-│   ├── Layout.tsx           # Header and footer wrapper
-│   ├── Intro.tsx           # Landing page with 4-level overview
-│   ├── ScenarioSelection.tsx # Choose KCC scenario
-│   ├── ProgressionView.tsx  # Main learning interface
-│   └── CompletionSummary.tsx # Results and next steps
+│   ├── Layout.tsx               # Header and footer wrapper
+│   ├── Intro.tsx               # Landing page with approach overview
+│   ├── ScenarioSelection.tsx   # Choose KCC scenario
+│   ├── ProgressionView.tsx     # Card-based learning interface
+│   ├── CompletionSummary.tsx   # Results and next steps
+│   ├── Icon.tsx               # Icon component with fallbacks
+│   ├── Icons.tsx              # SVG icon library
+│   └── WorkflowDiagram.tsx    # Visual workflow representations
 ├── data/
-│   └── scenarios.ts         # KCC scenario content
+│   └── scenarios.ts           # KCC scenario content with frameworks
 ├── types/
-│   └── index.ts            # TypeScript interfaces
+│   └── index.ts              # TypeScript interfaces
 ├── assets/
-│   └── mtm-logo.png        # Meet the Moment logo
-└── App.tsx                 # Main app with routing
+│   └── mtm-logo.png          # Meet the Moment logo
+└── App.tsx                   # Main app with routing
 ```
 
-## 🔄 User Flow
+## 🔄 Improved User Experience
 
-1. **Intro Screen**: Visual journey of 4 levels with KCC colors
-2. **Scenario Selection**: Choose from 4 KCC situations
-3. **Material Combinations**: Select context materials (3-5 options per scenario)
-4. **Level Progression**: Scroll through 4 levels with KCC examples
-5. **Completion**: Impact summary with time saved for KCC staff
+### Card-Based Navigation
+- **One approach at a time** for focused learning
+- **Horizontal progress indicator** with connecting lines
+- **Collapsible sections**: Overview, How It Works, Real Examples
+- **Framework toggles** for CRAFT vs PCTF comparison
 
-## 📊 Success Metrics
+### Progressive Disclosure
+1. **Intro Screen**: Visual journey overview
+2. **Scenario Selection**: Choose from 5 KCC situations
+3. **Approach Cards**: Navigate through 3 practical approaches
+4. **Interactive Examples**: Framework comparison and real prompts
+5. **Completion**: Tool recommendations and next steps
 
-The app tracks learning progression and shows real impact:
-- Time savings per level (seconds to hours)
-- Annual impact for KCC (24-180 hours saved)
-- Efficiency gains (6-minute response times, 65% adoption rate increase)
+## 💼 Professional Tool Recommendations
 
-## 🎯 Features
+**⚠️ Important**: This trainer does NOT recommend free AI tools for professional nonprofit work.
 
-### Must-Have (MVP)
-- ✅ Interactive intro with visual progression pathway
-- ✅ 4 KCC scenarios with realistic nonprofit situations  
-- ✅ 3-5 pre-generated material combinations per scenario
-- ✅ 4 complexity levels showing progression
-- ✅ Visual workflow diagrams for each level (SVG-based)
-- ✅ Time/effort indicators relevant to KCC's small staff
-- ✅ Professional line icons (no emojis)
-- ✅ Draft-focused language (no "perfect" outputs)
-- ✅ Mobile-responsive design
-- ✅ Completion summary screen
-- ✅ "Start Over" navigation
+### Recommended Organizational Options:
+- **Microsoft 365 Copilot** - For organizations using Microsoft 365
+- **Google Gemini** - For organizations using Google Workspace  
+- **Claude Teams** - Enterprise accounts with enhanced privacy
+- **ChatGPT Teams** - Team accounts with data protection
 
-### Future Roadmap
-- Phase 2: PDF generation with personalized takeaways
-- Phase 3: Additional scenarios for other nonprofit subsectors
-- Phase 4: Progress tracking across sessions
-- Phase 5: Real integration examples with common nonprofit tools
-- Phase 6: Video testimonials from KCC staff
+### Meeting Transcript Integration
+Emphasizes using meeting transcripts (auto-generated from Zoom, Teams, Google Meet) for dramatically improved AI output quality.
+
+## 📊 Key Features Implemented
+
+### ✅ Completed Features
+- **Card-based navigation** replacing overwhelming scroll
+- **Framework comparison** (CRAFT vs PCTF) with detailed explanations
+- **Meeting transcript emphasis** throughout the experience
+- **Professional tool guidance** with organizational recommendations
+- **Cost warnings** discouraging free AI tools
+- **Mobile-responsive design** with proper touch targets
+- **TypeScript implementation** for type safety
+- **Component architecture** for maintainability
+
+### ⏳ In Development
+- Complete framework implementation for all 5 scenarios
+- Additional organizational case studies
+- Progress tracking across sessions
+
+## 🚀 Deployment
+
+### Netlify Setup
+1. Connect GitHub repository to Netlify
+2. Build settings:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `build`
+   - **Node version**: `18.x`
+3. Automatic deployments on git push
+
+### Environment Variables
+No environment variables required - fully static application.
+
+## 📈 Future Roadmap
+
+### Phase 2: Enhanced Content
+- Complete framework coverage for all scenarios
+- Additional nonprofit sector examples
+- Video testimonials integration
+
+### Phase 3: Extended Features  
+- PDF generation with personalized takeaways
+- Progress tracking across learning sessions
+- Integration examples with common nonprofit tools
+
+### Phase 4: Scale & Measure
+- Usage analytics and learning outcomes
+- Multi-organization customization
+- Advanced workflow automation examples
+
+## 🤝 Contributing
+
+This project is developed for Meet the Moment's nonprofit training programs. For questions or suggestions, please open an issue in the GitHub repository.
+
+## 📄 License
+
+Proprietary - Meet the Moment, LLC
 
 ---
 
-**Prototype by Meet the Moment** 🚀
+**Developed by Meet the Moment** 🚀  
+*Empowering nonprofits with practical AI training*
