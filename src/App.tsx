@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Intro from './components/Intro';
+import ScenarioSelection from './components/ScenarioSelection';
+import ProgressionView from './components/ProgressionView';
+import CompletionSummary from './components/CompletionSummary';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/scenarios" element={<ScenarioSelection />} />
+          <Route path="/progression/:scenarioId" element={<ProgressionView />} />
+          <Route path="/completion" element={<CompletionSummary />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

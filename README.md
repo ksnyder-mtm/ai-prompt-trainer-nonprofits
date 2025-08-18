@@ -1,46 +1,150 @@
-# Getting Started with Create React App
+# AI Prompt Progression Trainer for Nonprofits
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web app that teaches nonprofit professionals how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
 
-## Available Scripts
+## 🎯 Overview
 
-In the project directory, you can run:
+This trainer helps nonprofit staff understand when and how to use different levels of AI tools effectively, from simple prompts to complex automations, without getting overwhelmed by technical complexity or spending beyond their limited technology budgets.
 
-### `npm start`
+### Target Users
+- Nonprofit executives using basic templates
+- Development managers experimenting with ChatGPT  
+- Volunteer coordinators looking for efficiency
+- Education specialists helping others with tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🏗️ Architecture
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend**: React with TypeScript
+- **Styling**: Custom CSS implementing MTM Style Guide
+- **Data**: Static JSON files (no backend required)
+- **Hosting**: Static site deployment (Netlify, Vercel, etc.)
 
-### `npm test`
+## 📚 The 4 Levels
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Basic Prompt**: Simple, conversational requests
+2. **Structured Format (CRAFT)**: Context, Role, Action, Format, Tone
+3. **Packaged Tools**: Pre-configured AI assistants (GPTs, Projects, Gems)
+4. **Automated Workflows**: AI that runs automatically based on triggers
 
-### `npm run build`
+## 🎪 KCC Scenarios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Board Meeting Tasks (📋)
+Process monthly board meeting notes about expanding foster network to serve 100 more kittens annually.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Donor Thank You (💝)
+Create personalized thank you messages for Kitten 5K fundraiser donors.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Volunteer Recruitment (🤝)
+Recruit and onboard volunteers for peak kitten season when KCC needs 150+ seasonal volunteers.
 
-### `npm run eject`
+### 4. Workshop Planning (📚)
+Plan monthly community education workshop on responsible pet ownership and kitten care.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🚀 Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+- Node.js 16+ and npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Clone the repository
+git clone [repository-url]
+cd ai-prompt-trainer
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start development server
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will be available at `http://localhost:3000`
+
+### Building for Production
+
+```bash
+# Create production build
+npm run build
+
+# Serve locally (optional)
+npm install -g serve
+serve -s build
+```
+
+## 🎨 Design System
+
+The application follows the MTM Style Guide:
+
+### Colors
+- Primary: `#1ab1d2` (light blue)
+- Accent: `#f18f38` (orange)
+- Navy: `#1c487b` (dark blue)
+- Soft Blue: `#85abbd` (muted blue)
+- Background Cream: `#fef4e3`
+- Background White: `#fafdfe`
+
+### Typography
+- Font stack: System fonts (-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)
+- H1: 40px, H2: 32px, H3: 24px, Body: 16px
+- Line height: 1.6 for body text
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Layout.tsx           # Header and footer wrapper
+│   ├── Intro.tsx           # Landing page with 4-level overview
+│   ├── ScenarioSelection.tsx # Choose KCC scenario
+│   ├── ProgressionView.tsx  # Main learning interface
+│   └── CompletionSummary.tsx # Results and next steps
+├── data/
+│   └── scenarios.ts         # KCC scenario content
+├── types/
+│   └── index.ts            # TypeScript interfaces
+├── assets/
+│   └── mtm-logo.png        # Meet the Moment logo
+└── App.tsx                 # Main app with routing
+```
+
+## 🔄 User Flow
+
+1. **Intro Screen**: Visual journey of 4 levels with KCC colors
+2. **Scenario Selection**: Choose from 4 KCC situations
+3. **Material Combinations**: Select context materials (3-5 options per scenario)
+4. **Level Progression**: Scroll through 4 levels with KCC examples
+5. **Completion**: Impact summary with time saved for KCC staff
+
+## 📊 Success Metrics
+
+The app tracks learning progression and shows real impact:
+- Time savings per level (seconds to hours)
+- Annual impact for KCC (24-180 hours saved)
+- Efficiency gains (6-minute response times, 65% adoption rate increase)
+
+## 🎯 Features
+
+### Must-Have (MVP)
+- ✅ Interactive intro with visual progression pathway
+- ✅ 4 KCC scenarios with realistic nonprofit situations  
+- ✅ 3-5 pre-generated material combinations per scenario
+- ✅ 4 complexity levels showing progression
+- ✅ Visual workflow diagrams for each level (SVG-based)
+- ✅ Time/effort indicators relevant to KCC's small staff
+- ✅ Professional line icons (no emojis)
+- ✅ Draft-focused language (no "perfect" outputs)
+- ✅ Mobile-responsive design
+- ✅ Completion summary screen
+- ✅ "Start Over" navigation
+
+### Future Roadmap
+- Phase 2: PDF generation with personalized takeaways
+- Phase 3: Additional scenarios for other nonprofit subsectors
+- Phase 4: Progress tracking across sessions
+- Phase 5: Real integration examples with common nonprofit tools
+- Phase 6: Video testimonials from KCC staff
+
+---
+
+**Prototype by Meet the Moment** 🚀
