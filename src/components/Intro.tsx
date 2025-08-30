@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
     <Layout>
       <div className="section" style={{ background: 'var(--bg-cream)', paddingTop: '24px', paddingBottom: '24px' }}>
         <div className="container text-center">
-          <h1>Master AI Prompting for Nonprofits</h1>
+          <h1>Explore AI Prompting for Nonprofits</h1>
           <p style={{ fontSize: '20px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 16px' }}>
             Learn how AI prompting evolves from basic queries to automated workflows using the Kitty Crochet Collective as your guide.
           </p>
