@@ -4,7 +4,7 @@ import Layout from './Layout';
 import Icon from './Icon';
 import WorkflowDiagram from './WorkflowDiagram';
 import { scenariosData } from '../data/scenarios';
-import { ScenarioData, PromptLevel } from '../types';
+import { ScenarioData } from '../types';
 
 const ProgressionView: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
