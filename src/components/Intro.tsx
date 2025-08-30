@@ -79,7 +79,7 @@ const Intro: React.FC = () => {
               <div className="text-secondary flex" style={{ alignItems: 'center', gap: '12px', justifyContent: 'center' }}>
                 <span className="flex" style={{ alignItems: 'center', gap: '4px' }}>
                   <Icon name="clock" size={16} color="var(--text-secondary)" />
-                  <10 minutes
+                  &lt;10 minutes
                 </span>
                 <span className="flex" style={{ alignItems: 'center', gap: '4px' }}>
                   <Icon name="target" size={16} color="var(--text-secondary)" />
@@ -98,7 +98,7 @@ const Intro: React.FC = () => {
               <div className="text-secondary flex" style={{ alignItems: 'center', gap: '12px', justifyContent: 'center' }}>
                 <span className="flex" style={{ alignItems: 'center', gap: '4px' }}>
                   <Icon name="clock" size={16} color="var(--text-secondary)" />
-                  <1 hour setup
+                  &lt;1 hour setup
                 </span>
                 <span className="flex" style={{ alignItems: 'center', gap: '4px' }}>
                   <Icon name="target" size={16} color="var(--text-secondary)" />
