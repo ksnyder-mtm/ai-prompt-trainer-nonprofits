@@ -324,6 +324,21 @@ const ProgressionView: React.FC = () => {
               </div>
             </div>
 
+            {/* Coming in Session 4 Banner for Approach 3 */}
+            {currentLevel.level === 3 && (
+              <div style={{
+                background: 'linear-gradient(135deg, var(--accent), var(--primary))',
+                color: 'white',
+                padding: '16px',
+                textAlign: 'center',
+                borderBottom: '3px solid var(--navy)',
+                fontWeight: 'bold',
+                fontSize: '18px'
+              }}>
+                🚀 Coming in Session 4
+              </div>
+            )}
+
             {/* Content Sections */}
             <div style={{ padding: '32px' }}>
               {/* Section 1: Overview */}
@@ -875,37 +890,6 @@ const ProgressionView: React.FC = () => {
               Choose the approach that matches your task's complexity and available time. 
               Most nonprofits use Approaches 1-2 for daily tasks.
             </p>
-          </div>
-
-          {/* Tool Requirements */}
-          <div style={{ 
-            marginTop: '16px',
-            padding: '20px',
-            background: 'var(--bg-cream)',
-            borderRadius: '12px',
-            border: '2px solid var(--accent)'
-          }}>
-            <h4 style={{ color: 'var(--navy)', marginBottom: '12px', textAlign: 'center' }}>
-              <Icon name="settings" size={16} style={{ marginRight: '6px', display: 'inline' }} />
-              Recommended AI Tools for Nonprofits
-            </h4>
-            <div style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              <p style={{ margin: '0 0 12px 0', fontWeight: 'bold', color: 'var(--navy)' }}>
-                ⚠️ We do NOT recommend free AI tools for professional nonprofit work
-              </p>
-              <p style={{ margin: '0 0 16px 0' }}>
-                <strong>Organizational Options (Recommended):</strong>
-              </p>
-              <ul style={{ margin: '0 0 16px 0', paddingLeft: '20px', textAlign: 'left' }}>
-                <li><strong>Microsoft 365 Copilot</strong> - If your organization uses Microsoft 365</li>
-                <li><strong>Google Gemini</strong> - If your organization uses Google Workspace</li>
-                <li><strong>Claude Teams</strong> - Enterprise accounts with enhanced privacy</li>
-                <li><strong>ChatGPT Teams</strong> - Team accounts with data protection</li>
-              </ul>
-              <p style={{ margin: 0, fontSize: '13px', fontStyle: 'italic' }}>
-                <strong>Pro Tip:</strong> Always use meeting transcripts when available - they can be generated automatically from Zoom, Microsoft Teams, or Google Meet recordings and dramatically improve AI output quality.
-              </p>
-            </div>
           </div>
         </div>
       </div>
