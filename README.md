@@ -1,13 +1,13 @@
-# AI Prompt Progression Trainer for Nonprofits
+# AI Prompt Exploration for Nonprofits
 
-An interactive web app that teaches nonprofit professionals how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
+An interactive web app that helps nonprofit professionals explore how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
 
 **🌐 Live Demo:** [Coming soon - deploy to Netlify]  
 **📁 Repository:** https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits
 
 ## 🎯 Overview
 
-This trainer helps nonprofit staff understand when and how to use different levels of AI tools effectively, from simple prompts to complex automations, without getting overwhelmed by technical complexity or spending beyond their limited technology budgets.
+This exploration tool helps nonprofit staff understand when and how to use different levels of AI tools effectively, from simple prompts to complex automations, without getting overwhelmed by technical complexity or spending beyond their limited technology budgets.
 
 ### Target Users
 - Nonprofit executives exploring AI adoption
@@ -144,7 +144,7 @@ src/
 
 ## 💼 Professional Tool Recommendations
 
-**⚠️ Important**: This trainer does NOT recommend free AI tools for professional nonprofit work.
+**⚠️ Important**: This exploration tool does NOT recommend free AI tools for professional nonprofit work.
 
 ### Recommended Organizational Options:
 - **Microsoft 365 Copilot** - For organizations using Microsoft 365
