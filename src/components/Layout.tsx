@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="header-content">
             <img src={mtmLogo} alt="Meet the Moment" className="header-logo" />
             <h2 style={{ margin: 0, fontSize: '24px', color: 'var(--navy)' }}>
-              AI Prompt Progression Trainer
+              AI Prompt Exploration for Nonprofits
             </h2>
           </div>
         </div>
