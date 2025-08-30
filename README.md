@@ -2,7 +2,7 @@
 
 An interactive web app that helps nonprofit professionals explore how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
 
-**🌐 Live Demo:** [Coming soon - deploy to Netlify]  
+**🌐 Live Demo:** https://ai-prompt-trainer-nonprofits.netlify.app  
 **📁 Repository:** https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits
 
 ## 🎯 Overview
