@@ -1416,7 +1416,113 @@ Volunteer Coordinator
 Kitty Crochet Collective
 
 P.S. Can't commit to regular hours? We also need event-day helpers for our Kitten 5K and holiday sale!`,
-        explanation: 'The structured format ensures all key information is included while maintaining KCC\'s warm, inviting tone. This approach creates excitement about volunteering and provides clear next steps.'
+        explanation: 'The structured format ensures all key information is included while maintaining KCC\'s warm, inviting tone. This approach creates excitement about volunteering and provides clear next steps.',
+        frameworks: [
+          {
+            framework: 'CRAFT',
+            promptStructure: 'Context, Role, Action, Format, Tone',
+            prompt: `Context: KCC needs 150+ volunteers for peak kitten season (April-October). We specifically need photographers to capture kittens in crocheted outfits, crocheters to create sweaters, foster support volunteers to help our 30 foster families, and adoption counselors. We have a warm, family-like culture that current volunteers rave about. Already have 50+ people on waiting list. Training happens every Saturday in March.
+
+Role: Jennifer Thompson, Volunteer Coordinator at the Kitty Crochet Collective, responsible for recruiting and managing volunteers
+
+Action: Create an engaging recruitment email that showcases specific volunteer opportunities and the joy of working with kittens
+
+Format: Professional email with subject line, compelling introduction, detailed role descriptions, testimonial, and clear call-to-action
+
+Tone: Warm, enthusiastic, inviting - emphasizing community and impact while being professional`,
+            output: `Subject: 🐱 Join Our Kitten Season Squad - 150 Heroes Needed!
+
+Dear Animal Lover,
+
+Picture this: a tiny tabby kitten wearing a hand-crocheted rainbow sweater, purring contentedly as they meet their forever family. This magical moment? You could help make it happen.
+
+The Kitty Crochet Collective is gearing up for our busiest season, and we need YOUR help to ensure every at-risk kitten gets their chance at a loving home. From April through October, over 400 kittens will come through our doors, each needing our special brand of care and cuteness enhancement.
+
+**We're recruiting for these rewarding roles:**
+
+📸 **Kitten Photographers** (2-4 hours/week)
+Capture the adorable moments as kittens model their crocheted creations. Your photos directly increase adoption rates by 65%!
+
+🧶 **Crochet Volunteers** (Work from home at your own pace)
+Join our 12 partner knitting clubs in creating the tiny sweaters and hats that make our kittens irresistible. Patterns and yarn provided!
+
+🏠 **Foster Support Volunteers** (4-6 hours/week)
+Help our 30 foster families with supply runs, vet appointments, and kitten socialization. Be the village that raises the kittens!
+
+💕 **Adoption Counselors** (One 4-hour shift/week)
+Match kittens with their perfect families during our weekend adoption events. Training provided - just bring your love for happy endings!
+
+**What our current volunteers say:**
+"I joined to help kittens but found a whole community. The joy on families' faces when they adopt makes every minute worth it!" - Sarah, 2-year volunteer
+
+**Ready to make a difference?**
+- March Training Sessions: Every Saturday at 10 AM
+- Already have 50+ people excited to join - don't miss out!
+- Sign up at: www.kittycrochet.org/volunteer
+
+Join our KCC family and help us prove that every kitten deserves a chance to shine!
+
+Warm regards,
+
+Jennifer Thompson
+Volunteer Coordinator
+Kitty Crochet Collective
+
+P.S. Can't commit to regular hours? We also need event-day helpers for our Kitten 5K and holiday sale!`,
+            explanation: 'CRAFT framework ensures systematic coverage of all recruitment elements while maintaining KCC\'s welcoming culture and clear volunteer expectations.'
+          },
+          {
+            framework: 'PCTF',
+            promptStructure: 'Purpose, Context, Task, Format',
+            prompt: `Purpose: Recruit 150+ volunteers for kitten season at the Kitty Crochet Collective
+
+Context: KCC needs volunteers April-October for peak kitten season. We specifically need photographers to capture kittens in crocheted outfits, crocheters to create sweaters, foster support volunteers to help our 30 foster families, and adoption counselors. We have a warm, family-like culture. Current volunteers rave about the experience. We already have 50+ people on a waiting list. Training happens every Saturday in March.
+
+Task: Write an engaging recruitment email that showcases our unique mission and the joy of volunteering with kittens
+
+Format: Email with subject line, compelling hook, specific opportunities, and clear call-to-action`,
+            output: `Subject: 🐱 Join Our Kitten Season Squad - 150 Heroes Needed!
+
+Dear Animal Lover,
+
+Picture this: a tiny tabby kitten wearing a hand-crocheted rainbow sweater, purring contentedly as they meet their forever family. This magical moment? You could help make it happen.
+
+The Kitty Crochet Collective is gearing up for our busiest season, and we need YOUR help to ensure every at-risk kitten gets their chance at a loving home. From April through October, over 400 kittens will come through our doors, each needing our special brand of care and cuteness enhancement.
+
+**We're recruiting for these rewarding roles:**
+
+📸 **Kitten Photographers** (2-4 hours/week)
+Capture the adorable moments as kittens model their crocheted creations. Your photos directly increase adoption rates by 65%!
+
+🧶 **Crochet Volunteers** (Work from home at your own pace)
+Join our 12 partner knitting clubs in creating the tiny sweaters and hats that make our kittens irresistible. Patterns and yarn provided!
+
+🏠 **Foster Support Volunteers** (4-6 hours/week)
+Help our 30 foster families with supply runs, vet appointments, and kitten socialization. Be the village that raises the kittens!
+
+💕 **Adoption Counselors** (One 4-hour shift/week)
+Match kittens with their perfect families during our weekend adoption events. Training provided - just bring your love for happy endings!
+
+**What our current volunteers say:**
+"I joined to help kittens but found a whole community. The joy on families' faces when they adopt makes every minute worth it!" - Sarah, 2-year volunteer
+
+**Ready to make a difference?**
+- March Training Sessions: Every Saturday at 10 AM
+- Already have 50+ people excited to join - don't miss out!
+- Sign up at: www.kittycrochet.org/volunteer
+
+Join our KCC family and help us prove that every kitten deserves a chance to shine!
+
+Warm regards,
+
+Jennifer Thompson
+Volunteer Coordinator
+Kitty Crochet Collective
+
+P.S. Can't commit to regular hours? We also need event-day helpers for our Kitten 5K and holiday sale!`,
+            explanation: 'PCTF structure focuses on clear purpose and task definition, creating compelling recruitment messages that convert interest into action.'
+          }
+        ]
       },
       {
         level: 3,
@@ -1684,7 +1790,165 @@ Format: Detailed 90-minute agenda with timing, activities, materials needed, and
 - Volunteer applications submitted
 - Newsletter subscriptions
 - Post-workshop survey completion`,
-        explanation: 'The structured prompt creates an engaging, KCC-specific workshop that balances education with hands-on experience, showcases adoptable kittens, and connects to KCC\'s unique mission.'
+        explanation: 'The structured prompt creates an engaging, KCC-specific workshop that balances education with hands-on experience, showcases adoptable kittens, and connects to KCC\'s unique mission.',
+        frameworks: [
+          {
+            framework: 'CRAFT',
+            promptStructure: 'Context, Role, Action, Format, Tone',
+            prompt: `Context: Planning KCC's monthly community education workshop at Cedar Rapids Community Center. We expect 200 participants - mix of new pet owners and families considering adoption. Past evaluations show people love hands-on activities. We have volunteer experts available, can showcase adoptable kittens, and want to highlight our crochet program. Our mission includes education to reduce shelter burden.
+
+Role: Marcus Williams, Education Specialist at Kitty Crochet Collective, responsible for engaging community education
+
+Action: Design a comprehensive 90-minute interactive workshop on kitten care that reduces shelter returns and promotes responsible pet ownership
+
+Format: Detailed agenda with timing, activities, materials needed, volunteer assignments, and success metrics
+
+Tone: Engaging, educational, warm, practical - emphasizing KCC's unique approach while keeping content accessible`,
+            output: `# Kitten Care Basics: A KCC Community Workshop
+**Duration:** 90 minutes | **Expected Attendance:** 200 participants
+
+## Welcome & KCC Mission (10 minutes)
+**Lead:** Susan Martinez, Executive Director
+- Welcome and housekeeping
+- KCC's story: From shelter crisis to crochet solution
+- Today's goals: Confident care = Forever homes
+- **Interactive:** Quick poll - "Who's thinking of adopting?"
+
+## The First 30 Days: Setting Kittens Up for Success (20 minutes)
+**Lead:** Dr. Sarah Chen (Volunteer Veterinarian)
+- **Demo Station 1:** Kitten-proofing your home (volunteer demonstrates)
+- **Demo Station 2:** Essential supplies on a budget
+- **Hands-on:** Participants practice holding kittens correctly
+- **KCC Touch:** Show how crocheted sweaters help with anxiety
+
+## Nutrition & Growth (15 minutes)
+**Lead:** David Chen, Program Director
+- Age-appropriate feeding with live demonstration
+- **Interactive:** Guess the kitten's age game
+- Reading body language and hunger cues
+- **Cost-saving tips:** Quality food within budget
+
+## Health & Wellness (20 minutes)
+**Lead:** Foster Family Panel (3 experienced families)
+- Vaccination timeline (handout provided)
+- **Red flags:** When to call the vet
+- **Myth-busting:** Indoor vs. outdoor cats
+- **KCC Success Story:** Medically fragile kitten thriving
+
+## Litter Box Success & Behavior (15 minutes)
+**Lead:** Marcus Williams, Education Specialist
+- **Demo Station 3:** Litter box setup and placement
+- Troubleshooting common issues
+- **Play demonstration:** Appropriate toys and enrichment
+- **Prevention focus:** Reducing returns to shelter
+
+## Meet Your Match + Q&A (10 minutes)
+**Lead:** Jennifer Thompson, Volunteer Coordinator
+- Meet today's adoptable kittens (wearing their crochets!)
+- Adoption process walkthrough
+- Volunteer opportunities announced
+- Q&A with all experts
+
+## Materials Needed:
+- 3 demo stations with supplies
+- 10 calm kittens for handling practice
+- Handouts: Supply checklist, vaccination schedule, KCC resources
+- Name tags for 15 volunteers
+- Photo booth with crochet props
+
+## Volunteer Assignments:
+- Station monitors (3)
+- Kitten handlers (6)
+- Registration table (2)
+- Photography for social media (1)
+- Refreshment table (2)
+- Floater/questions (1)
+
+## Success Metrics:
+- Sign-ups for adoption appointments
+- Volunteer applications submitted
+- Newsletter subscriptions
+- Post-workshop survey completion`,
+            explanation: 'CRAFT framework ensures all workshop elements are systematically addressed - from context to tone - creating a comprehensive educational experience.'
+          },
+          {
+            framework: 'PCTF',
+            promptStructure: 'Purpose, Context, Task, Format',
+            prompt: `Purpose: Create an engaging 90-minute workshop on kitten care that reduces shelter returns and promotes responsible pet ownership
+
+Context: Monthly workshop at Cedar Rapids Community Center for 200 participants. Mix of new pet owners and families considering adoption. KCC's mission includes education to reduce shelter burden. We have volunteer experts, can showcase adoptable kittens, and want to highlight our crochet program. Past evaluations show people love hands-on activities.
+
+Task: Design an interactive workshop agenda that educates while showcasing KCC's unique approach
+
+Format: Detailed 90-minute agenda with timing, activities, materials needed, and volunteer assignments`,
+            output: `# Kitten Care Basics: A KCC Community Workshop
+**Duration:** 90 minutes | **Expected Attendance:** 200 participants
+
+## Welcome & KCC Mission (10 minutes)
+**Lead:** Susan Martinez, Executive Director
+- Welcome and housekeeping
+- KCC's story: From shelter crisis to crochet solution
+- Today's goals: Confident care = Forever homes
+- **Interactive:** Quick poll - "Who's thinking of adopting?"
+
+## The First 30 Days: Setting Kittens Up for Success (20 minutes)
+**Lead:** Dr. Sarah Chen (Volunteer Veterinarian)
+- **Demo Station 1:** Kitten-proofing your home (volunteer demonstrates)
+- **Demo Station 2:** Essential supplies on a budget
+- **Hands-on:** Participants practice holding kittens correctly
+- **KCC Touch:** Show how crocheted sweaters help with anxiety
+
+## Nutrition & Growth (15 minutes)
+**Lead:** David Chen, Program Director
+- Age-appropriate feeding with live demonstration
+- **Interactive:** Guess the kitten's age game
+- Reading body language and hunger cues
+- **Cost-saving tips:** Quality food within budget
+
+## Health & Wellness (20 minutes)
+**Lead:** Foster Family Panel (3 experienced families)
+- Vaccination timeline (handout provided)
+- **Red flags:** When to call the vet
+- **Myth-busting:** Indoor vs. outdoor cats
+- **KCC Success Story:** Medically fragile kitten thriving
+
+## Litter Box Success & Behavior (15 minutes)
+**Lead:** Marcus Williams, Education Specialist
+- **Demo Station 3:** Litter box setup and placement
+- Troubleshooting common issues
+- **Play demonstration:** Appropriate toys and enrichment
+- **Prevention focus:** Reducing returns to shelter
+
+## Meet Your Match + Q&A (10 minutes)
+**Lead:** Jennifer Thompson, Volunteer Coordinator
+- Meet today's adoptable kittens (wearing their crochets!)
+- Adoption process walkthrough
+- Volunteer opportunities announced
+- Q&A with all experts
+
+## Materials Needed:
+- 3 demo stations with supplies
+- 10 calm kittens for handling practice
+- Handouts: Supply checklist, vaccination schedule, KCC resources
+- Name tags for 15 volunteers
+- Photo booth with crochet props
+
+## Volunteer Assignments:
+- Station monitors (3)
+- Kitten handlers (6)
+- Registration table (2)
+- Photography for social media (1)
+- Refreshment table (2)
+- Floater/questions (1)
+
+## Success Metrics:
+- Sign-ups for adoption appointments
+- Volunteer applications submitted
+- Newsletter subscriptions
+- Post-workshop survey completion`,
+            explanation: 'PCTF structure focuses on clear purpose and task definition, resulting in actionable workshop plans that meet educational objectives.'
+          }
+        ]
       },
       {
         level: 3,
