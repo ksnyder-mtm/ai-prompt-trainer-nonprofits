@@ -1,13 +1,13 @@
-# AI Prompt Training for Nonprofits
+# From Basic to Structured Prompts: AI Training for Nonprofits
 
-An interactive web app that helps nonprofit professionals learn how to create effective AI prompts - from basic queries to structured formats - using the Kitty Crochet Collective as a case study throughout.
+An interactive training tool that teaches nonprofit professionals the difference between basic and structured AI prompts through hands-on examples with the Kitty Crochet Collective.
 
 **🌐 Live Demo:** https://ai-prompt-trainer-nonprofits.netlify.app  
 **📁 Repository:** https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits
 
 ## 🎯 Overview
 
-This training tool helps nonprofit staff understand how to write better AI prompts, showing the difference between basic conversational prompts and structured frameworks like CRAFT and PCTF.
+This training tool helps nonprofit staff see exactly how structured prompts are formatted and why they produce more consistent, professional results than basic conversational prompts.
 
 ### Target Users
 - Nonprofit executives exploring AI adoption
@@ -25,8 +25,15 @@ This training tool helps nonprofit staff understand how to write better AI promp
 
 ## 📚 The 2-Level Journey
 
-1. **Basic Prompts**: Simple, conversational requests for quick results
-2. **Structured Prompts**: Framework-based prompts using CRAFT or PCTF for consistent, professional outputs
+### Level 1: Basic Prompts
+- Simple, conversational requests
+- Quick to write but variable results
+- Good for brainstorming and initial ideas
+
+### Level 2: Structured Prompts
+- Framework-based prompts using CRAFT or PCTF
+- Consistent, professional outputs
+- Ideal for repeatable processes and team sharing
 
 ### Framework Options for Structured Prompts
 
@@ -133,21 +140,21 @@ src/
 - **Framework toggles** for CRAFT vs PCTF comparison
 
 ### Progressive Disclosure
-1. **Intro Screen**: Visual journey overview
+1. **Intro Screen**: Overview of basic vs structured prompts
 2. **Scenario Selection**: Choose from 5 KCC situations
-3. **Approach Cards**: Navigate through 3 practical approaches
-4. **Interactive Examples**: Framework comparison and real prompts
-5. **Completion**: Tool recommendations and next steps
+3. **Approach Cards**: Navigate through 2 approaches (basic and structured)
+4. **Interactive Examples**: Toggle between CRAFT and PCTF frameworks
+5. **Completion**: Summary of learning and next steps
 
-## 💼 Professional Tool Recommendations
+## 🎯 Why Structure Matters
 
-**⚠️ Important**: This exploration tool does NOT recommend free AI tools for professional nonprofit work.
-
-### Recommended Organizational Options:
-- **Microsoft 365 Copilot** - For organizations using Microsoft 365
-- **Google Gemini** - For organizations using Google Workspace  
-- **Claude Teams** - Enterprise accounts with enhanced privacy
-- **ChatGPT Teams** - Team accounts with data protection
+### Benefits of Structured Prompts:
+- **Consistent Results**: Generate similar quality outputs each time
+- **Reduced Iterations**: Fewer rounds of clarification needed
+- **Clear Formatting**: Results arrive in specified structures
+- **Team Sharing**: Document and share what works
+- **Platform Agnostic**: Framework principles apply to any AI tool
+- **Measurable Impact**: Track time and quality improvements
 
 ### Meeting Transcript Integration
 Emphasizes using meeting transcripts (auto-generated from Zoom, Teams, Google Meet) for dramatically improved AI output quality.
@@ -164,10 +171,11 @@ Emphasizes using meeting transcripts (auto-generated from Zoom, Teams, Google Me
 - **TypeScript implementation** for type safety
 - **Component architecture** for maintainability
 
-### ⏳ In Development
-- Complete framework implementation for all 5 scenarios
-- Additional organizational case studies
-- Progress tracking across sessions
+### 🔍 Focus Areas
+- Understanding when to use basic vs structured prompts
+- Learning CRAFT and PCTF framework components
+- Seeing real examples of formatted prompts
+- Practicing with nonprofit-specific scenarios
 
 ## 🚀 Deployment
 
@@ -184,20 +192,11 @@ No environment variables required - fully static application.
 
 ## 📈 Future Roadmap
 
-### Phase 2: Enhanced Content
-- Complete framework coverage for all scenarios
-- Additional nonprofit sector examples
-- Video testimonials integration
-
-### Phase 3: Extended Features  
-- PDF generation with personalized takeaways
-- Progress tracking across learning sessions
-- Integration examples with common nonprofit tools
-
-### Phase 4: Scale & Measure
-- Usage analytics and learning outcomes
-- Multi-organization customization
-- Advanced workflow automation examples
+### Future Enhancements
+- Additional nonprofit scenarios
+- More framework variations
+- Practice exercises with feedback
+- Team collaboration features
 
 ## 🤝 Contributing
 
