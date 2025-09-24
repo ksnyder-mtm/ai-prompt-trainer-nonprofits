@@ -21,40 +21,13 @@ const CompletionSummary: React.FC = () => {
   const scenarioData = scenariosData.find(s => s.scenario.id === state.scenarioId);
   const scenarioIcon = scenarioData?.scenario.icon || 'check-circle';
 
-  const getTimeImpact = (scenarioId: string) => {
-    const impacts = {
-      'board-meeting': {
-        timeSaved: '2-3 hours per meeting',
-        monthlyImpact: '24-36 hours saved annually',
-        efficiency: '85% reduction in follow-up time'
-      },
-      'donor-thank-you': {
-        timeSaved: '15 hours per month',
-        monthlyImpact: '180 hours saved annually',
-        efficiency: '6-minute average response time'
-      },
-      'volunteer-recruitment': {
-        timeSaved: '8 hours per campaign',
-        monthlyImpact: '96 hours saved annually',
-        efficiency: '150+ volunteers recruited seamlessly'
-      },
-      'workshop-planning': {
-        timeSaved: '5 hours per workshop',
-        monthlyImpact: '60 hours saved annually',
-        efficiency: '200+ participants per month'
-      }
-    };
-    return impacts[scenarioId as keyof typeof impacts] || impacts['board-meeting'];
-  };
-
-  const impact = getTimeImpact(state.scenarioId);
 
   const nextSteps = [
-    'Start with Level 1 (Basic Prompts) for immediate tasks',
-    'Implement Level 2 (CRAFT structure) for important communications',
-    'Set up Level 3 (Packaged Tools) for recurring tasks',
-    'Plan Level 4 (Automation) for high-volume processes',
-    'Train your team on the progression pathway'
+    'Practice with basic prompts to understand AI capabilities',
+    'Learn the CRAFT framework (Context, Role, Action, Format, Tone)',
+    'Try the PCTF framework (Persona, Context, Task, Format)',
+    'Apply structured prompts to your nonprofit\'s specific needs',
+    'Share these techniques with your team'
   ];
 
   return (
@@ -69,39 +42,29 @@ const CompletionSummary: React.FC = () => {
             You've Completed: {state.scenarioTitle}
           </h2>
           <p style={{ fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-            You now understand how AI prompting can evolve from basic queries to powerful automated workflows 
-            that save nonprofit organizations significant time and resources.
+            You now understand the difference between basic and structured prompts,
+            and how frameworks like CRAFT and PCTF can help you get better results from AI.
           </p>
         </div>
       </div>
 
       <div className="section">
         <div className="container">
-          <h2 className="text-center mb-4">Your Learning Impact</h2>
-          
-          <div className="grid grid-3">
+          <h2 className="text-center mb-4">What You've Learned</h2>
+
+          <div className="grid grid-2" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div className="card text-center">
-              <h3 style={{ color: 'var(--primary)', marginBottom: '8px' }}>Time Savings</h3>
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--navy)' }}>
-                {impact.timeSaved}
-              </div>
-              <p className="text-secondary">Per implementation cycle</p>
+              <h3 style={{ color: 'var(--primary)', marginBottom: '8px' }}>Basic Prompts</h3>
+              <p className="text-secondary">
+                Simple, conversational requests that get quick results but may vary in quality
+              </p>
             </div>
-            
+
             <div className="card text-center">
-              <h3 style={{ color: 'var(--accent)', marginBottom: '8px' }}>Annual Impact</h3>
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--navy)' }}>
-                {impact.monthlyImpact}
-              </div>
-              <p className="text-secondary">Staff time returned to mission work</p>
-            </div>
-            
-            <div className="card text-center">
-              <h3 style={{ color: 'var(--soft-blue)', marginBottom: '8px' }}>Efficiency Gain</h3>
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--navy)' }}>
-                {impact.efficiency}
-              </div>
-              <p className="text-secondary">Measurable improvement</p>
+              <h3 style={{ color: 'var(--accent)', marginBottom: '8px' }}>Structured Prompts</h3>
+              <p className="text-secondary">
+                Framework-based prompts that deliver consistent, professional outputs
+              </p>
             </div>
           </div>
 
@@ -111,25 +74,25 @@ const CompletionSummary: React.FC = () => {
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                   <Icon name="zap" size={20} color="var(--primary)" />
-                  <h4 style={{ color: 'var(--primary)', margin: 0 }}>Level Progression</h4>
+                  <h4 style={{ color: 'var(--primary)', margin: 0 }}>Prompt Structure</h4>
                 </div>
                 <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '14px', lineHeight: 1.6 }}>
-                  <li><strong>Level 1:</strong> Quick wins with basic prompts</li>
-                  <li><strong>Level 2:</strong> Consistent results with CRAFT structure</li>
-                  <li><strong>Level 3:</strong> Scalable tools with organizational context</li>
-                  <li><strong>Level 4:</strong> Automated workflows for maximum efficiency</li>
+                  <li><strong>Basic:</strong> Quick, simple prompts for immediate needs</li>
+                  <li><strong>Structured:</strong> Framework-based prompts for professional results</li>
+                  <li><strong>CRAFT:</strong> Context, Role, Action, Format, Tone</li>
+                  <li><strong>PCTF:</strong> Persona, Context, Task, Format</li>
                 </ul>
               </div>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                   <Icon name="target" size={20} color="var(--accent)" />
-                  <h4 style={{ color: 'var(--accent)', margin: 0 }}>When to Use Each Level</h4>
+                  <h4 style={{ color: 'var(--accent)', margin: 0 }}>When to Use Each Approach</h4>
                 </div>
                 <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '14px', lineHeight: 1.6 }}>
-                  <li><strong>One-off tasks:</strong> Level 1 basic prompts</li>
-                  <li><strong>Important comms:</strong> Level 2 structured format</li>
-                  <li><strong>Regular activities:</strong> Level 3 packaged tools</li>
-                  <li><strong>Recurring processes:</strong> Level 4 automation</li>
+                  <li><strong>Quick brainstorming:</strong> Basic prompts</li>
+                  <li><strong>Important communications:</strong> Structured prompts</li>
+                  <li><strong>Professional documents:</strong> CRAFT framework</li>
+                  <li><strong>Expert perspectives:</strong> PCTF framework</li>
                 </ul>
               </div>
             </div>
@@ -147,13 +110,12 @@ const CompletionSummary: React.FC = () => {
                 </ol>
               </div>
               <div>
-                <h4 style={{ color: 'var(--navy)', marginBottom: '12px' }}>Budget Considerations:</h4>
+                <h4 style={{ color: 'var(--navy)', marginBottom: '12px' }}>Framework Selection:</h4>
                 <div style={{ fontSize: '14px', lineHeight: 1.6 }}>
-                  <p><strong>Level 1-2:</strong> Free with existing AI tools</p>
-                  <p><strong>Level 3:</strong> $20-60/month for premium AI tools</p>
-                  <p><strong>Level 4:</strong> $50-200/month for automation platforms</p>
+                  <p><strong>CRAFT:</strong> Best for clear, task-oriented outputs</p>
+                  <p><strong>PCTF:</strong> Best for specialized, expert perspectives</p>
                   <p style={{ marginTop: '12px', color: 'var(--primary)' }}>
-                    <strong>ROI:</strong> Time savings typically justify costs within first month
+                    <strong>Tip:</strong> Experiment with both frameworks to find what works best for your needs
                   </p>
                 </div>
               </div>

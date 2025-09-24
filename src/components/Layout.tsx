@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import mtmLogo from '../assets/mtm-logo.png';
 
 interface LayoutProps {
@@ -6,14 +7,22 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <header className="header">
         <div className="container">
           <div className="header-content">
-            <img src={mtmLogo} alt="Meet the Moment" className="header-logo" />
+            <img
+              src={mtmLogo}
+              alt="Meet the Moment"
+              className="header-logo"
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate('/')}
+            />
             <h2 style={{ margin: 0, fontSize: '24px', color: 'var(--navy)' }}>
-              AI Prompt Exploration for Nonprofits
+              From Basic to Structured Prompts
             </h2>
           </div>
         </div>

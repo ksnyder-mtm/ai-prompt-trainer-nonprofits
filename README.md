@@ -1,13 +1,13 @@
-# AI Prompt Exploration for Nonprofits
+# AI Prompt Training for Nonprofits
 
-An interactive web app that helps nonprofit professionals explore how AI prompting evolves from basic queries to automated workflows, using the Kitty Crochet Collective as a case study throughout.
+An interactive web app that helps nonprofit professionals learn how to create effective AI prompts - from basic queries to structured formats - using the Kitty Crochet Collective as a case study throughout.
 
 **🌐 Live Demo:** https://ai-prompt-trainer-nonprofits.netlify.app  
 **📁 Repository:** https://github.com/ksnyder-mtm/ai-prompt-trainer-nonprofits
 
 ## 🎯 Overview
 
-This exploration tool helps nonprofit staff understand when and how to use different levels of AI tools effectively, from simple prompts to complex automations, without getting overwhelmed by technical complexity or spending beyond their limited technology budgets.
+This training tool helps nonprofit staff understand how to write better AI prompts, showing the difference between basic conversational prompts and structured frameworks like CRAFT and PCTF.
 
 ### Target Users
 - Nonprofit executives exploring AI adoption
@@ -23,20 +23,17 @@ This exploration tool helps nonprofit staff understand when and how to use diffe
 - **Deployment**: Static site on Netlify
 - **Navigation**: React Router for smooth transitions
 
-## 📚 The 3 Approaches (Updated)
+## 📚 The 2-Level Journey
 
-**Note**: Originally designed with 4 levels, now focuses on 3 practical approaches as Level 4 (Automated Workflows) is beyond current class scope.
-
-1. **Basic Prompt**: Simple, conversational requests
-2. **Structured Format**: Choose between CRAFT or PCTF frameworks
-3. **Packaged Tools**: Pre-configured AI assistants (GPTs, Projects, Gems)
+1. **Basic Prompts**: Simple, conversational requests for quick results
+2. **Structured Prompts**: Framework-based prompts using CRAFT or PCTF for consistent, professional outputs
 
 ### Framework Options for Structured Prompts
 
 **CRAFT**: Context, Role, Action, Format, Tone  
 **PCTF**: Persona, Context, Task, Format
 
-Interactive framework comparison helps learners understand which structure works best for their needs.
+Interactive framework comparison helps learners see exactly how structured prompts are formatted and why they produce better results.
 
 ## 🎪 KCC Scenarios
 

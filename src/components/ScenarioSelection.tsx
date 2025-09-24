@@ -18,7 +18,7 @@ const ScenarioSelection: React.FC = () => {
           <div className="text-center mb-4">
             <h1>Choose a KCC Scenario</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto' }}>
-              Each scenario shows how AI prompting evolves from basic requests to automated workflows. 
+              Each scenario shows the difference between basic and structured prompts.
               Pick one that matches your current challenges at your nonprofit.
             </p>
           </div>
@@ -72,11 +72,8 @@ const ScenarioSelection: React.FC = () => {
           </div>
 
           <div className="text-center mt-4">
-            <p className="text-secondary" style={{ marginBottom: '16px' }}>
-              Each scenario takes about 5-10 minutes to complete
-            </p>
-            <button 
-              onClick={() => navigate('/')} 
+            <button
+              onClick={() => navigate('/')}
               className="btn btn-outline"
             >
               ← Back to Introduction

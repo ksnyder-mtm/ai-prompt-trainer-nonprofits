@@ -18,10 +18,10 @@ const ProgressionView: React.FC = () => {
   useEffect(() => {
     const data = scenariosData.find(s => s.scenario.id === scenarioId);
     if (data) {
-      // Filter out Approach 4 as it's beyond scope
+      // Filter to only show levels 1 and 2 (basic and structured prompts)
       const filteredData = {
         ...data,
-        levels: data.levels.filter(level => level.level <= 3)
+        levels: data.levels.filter(level => level.level <= 2)
       };
       setScenarioData(filteredData);
       
@@ -65,10 +65,12 @@ const ProgressionView: React.FC = () => {
       const newIndex = currentApproachIndex - 1;
       setCurrentApproachIndex(newIndex);
       // Expand workflow and example sections for Level 2 to show framework toggle
-      const sections = scenarioData?.levels[newIndex].level === 2 
-        ? new Set(['overview', 'workflow', 'example']) 
+      const sections = scenarioData?.levels[newIndex].level === 2
+        ? new Set(['overview', 'workflow', 'example'])
         : new Set(['overview']);
       setExpandedSections(sections);
+      // Scroll to top of page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -77,10 +79,12 @@ const ProgressionView: React.FC = () => {
       const newIndex = currentApproachIndex + 1;
       setCurrentApproachIndex(newIndex);
       // Expand workflow and example sections for Level 2 to show framework toggle
-      const sections = scenarioData?.levels[newIndex].level === 2 
-        ? new Set(['overview', 'workflow', 'example']) 
+      const sections = scenarioData?.levels[newIndex].level === 2
+        ? new Set(['overview', 'workflow', 'example'])
         : new Set(['overview']);
       setExpandedSections(sections);
+      // Scroll to top of page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -886,9 +890,8 @@ const ProgressionView: React.FC = () => {
               Remember
             </h4>
             <p style={{ margin: '0 0 16px 0', fontSize: '14px', color: 'var(--text-secondary)' }}>
-              These are <strong>alternative approaches</strong>, not sequential steps. 
-              Choose the approach that matches your task's complexity and available time. 
-              Most nonprofits use Approaches 1-2 for daily tasks.
+              These are <strong>alternative approaches</strong>, not sequential steps.
+              Choose the approach that matches your needs.
             </p>
           </div>
         </div>
