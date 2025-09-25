@@ -10,9 +10,6 @@ const Intro: React.FC = () => {
     navigate('/scenarios');
   };
 
-  const handleSkipIntro = () => {
-    navigate('/scenarios');
-  };
 
   return (
     <Layout>
@@ -20,10 +17,15 @@ const Intro: React.FC = () => {
         <div className="container text-center">
           <h1>AI Prompt Training for Nonprofits</h1>
           <p style={{ fontSize: '20px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 16px' }}>
-            Learn how to create effective AI prompts - from basic queries to structured formats - using the Kitty Crochet Collective as your guide.
+            Learn how to create effective AI prompts - from basic queries to structured formats - using the Kitty Crochet Collective AI prompting scenarios as your guide.
           </p>
+          <img
+            src="/KCC photo.png"
+            alt="Kitten in a sweater"
+            style={{ width: '150px', height: 'auto', borderRadius: '8px', margin: '16px auto', display: 'block' }}
+          />
           <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 32px', fontStyle: 'italic' }}>
-            The Kitty Crochet Collective is a 501(c)(3) nonprofit in Cedar Rapids, Iowa, that partners with knitting clubs to create hand-stitched sweaters for shelter kittens, increasing their adoption rates by 65%. With a $5,000 annual technology budget and 25 staff members serving 400+ kittens yearly, KCC represents the resource constraints and impact potential of many nonprofits today.
+            The Kitty Crochet Collective is a fictitious 501(c)(3) nonprofit in Cedar Rapids, Iowa, that partners with knitting clubs to create hand-stitched sweaters for shelter kittens, increasing their adoption rates by 65%. With a $5,000 annual technology budget and 6 full-time staff members, each of whom wears multiple hats, KCC represents the resource constraints of many nonprofits.
           </p>
           
           <div className="grid grid-2" style={{ marginTop: '48px', marginBottom: '48px' }}>
@@ -41,6 +43,12 @@ const Intro: React.FC = () => {
               </div>
               <p>Work through actual KCC situations: board meeting follow-ups, donor thank you notes, volunteer recruitment, and workshop planning.</p>
             </div>
+          </div>
+
+          <div className="text-center mt-4">
+            <button onClick={handleGetStarted} className="btn btn-primary">
+              Start Learning <Icon name="zap" size={16} style={{ marginLeft: '4px' }} />
+            </button>
           </div>
         </div>
       </div>
@@ -98,11 +106,8 @@ const Intro: React.FC = () => {
           </div>
 
           <div className="text-center mt-4">
-            <button onClick={handleGetStarted} className="btn btn-primary" style={{ marginRight: '16px' }}>
+            <button onClick={handleGetStarted} className="btn btn-primary">
               Start Learning <Icon name="zap" size={16} style={{ marginLeft: '4px' }} />
-            </button>
-            <button onClick={handleSkipIntro} className="btn btn-outline">
-              Skip Intro
             </button>
           </div>
         </div>
